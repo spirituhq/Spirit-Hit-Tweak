@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -228,22 +228,6 @@
             border-radius: 15px;
         }
 
-        .glow-effect {
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(138, 43, 226, 0.2) 0%, transparent 70%);
-            animation: pulse 3s ease-in-out infinite;
-            pointer-events: none;
-        }
-
-        @keyframes pulse {
-            0%, 100% { opacity: 0.3; transform: scale(1); }
-            50% { opacity: 0.6; transform: scale(1.1); }
-        }
-
         /* Download Section */
         .download-section {
             position: relative;
@@ -350,22 +334,6 @@
             transition: all 0.4s ease;
             position: relative;
             overflow: hidden;
-        }
-
-        .feature-card::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(138, 43, 226, 0.1) 0%, transparent 70%);
-            opacity: 0;
-            transition: opacity 0.4s;
-        }
-
-        .feature-card:hover::before {
-            opacity: 1;
         }
 
         .feature-card:hover {
@@ -511,7 +479,7 @@
     <!-- Hero Section -->
     <section class="hero">
         <h1>SPIRIT TWEAKS</h1>
-        <p>Optimiseur Ultime - Performance & Aim Precision</p>
+        <p>The Ultimate Optimizer – Performance & Aim Precision</p>
     </section>
 
     <!-- Screenshot Section -->
@@ -525,17 +493,16 @@
     <!-- Download Section -->
     <section class="download-section" id="download">
         <div class="version-badge">✨ Version 2.0 - Latest Release</div>
-        <h2>Prêt à Dominer ?</h2>
-        <p>Téléchargez Spirit Tweaks et transformez votre expérience de jeu</p>
-        
-        <!-- REMPLACE CE LIEN PAR TON LIEN DIRECT -->
+        <h2>Ready to Dominate?</h2>
+        <p>Download Spirit Tweaks and transform your gaming experience</p>
+
         <a href="https://www.dropbox.com/scl/fi/6mhcu7ka1y6m536zrh3mz/Spirit-Hit-tweaks.exe?rlkey=7pzkb09yv6woh27tvdljwvn64&st=kpgiw7sv&dl=1" class="download-button" download>
             <span>📥</span>
-            <span>Télécharger Maintenant</span>
+            <span>Download Now</span>
         </a>
-        
+
         <p style="margin-top: 30px; font-size: 14px; color: #666;">
-            ⚠️ Windows 10/11 - Exécuter en Administrateur
+            ⚠️ Windows 10/11 - Run as Administrator
         </p>
     </section>
 
@@ -543,44 +510,44 @@
     <section class="features" id="features">
         <div class="feature-card">
             <div class="feature-icon">🎯</div>
-            <h3>Aim Optimisé</h3>
-            <p>Désactivation totale de l'accélération souris, suppression du lissage Windows et optimisation du polling rate USB pour une précision chirurgicale.</p>
+            <h3>Optimized Aim</h3>
+            <p>Completely disables mouse acceleration, removes Windows smoothing, and optimizes USB polling rate for surgical precision.</p>
         </div>
         <div class="feature-card">
             <div class="feature-icon">⚡</div>
-            <h3>Performance Max</h3>
-            <p>Latence réseau minimale, optimisation TCP/IP avancée, et configuration MMCSS pour des FPS stables et un hit registry parfait.</p>
+            <h3>Maximum Performance</h3>
+            <p>Minimized network latency, advanced TCP/IP optimization, and MMCSS tuning for stable FPS and perfect hit registration.</p>
         </div>
         <div class="feature-card">
             <div class="feature-icon">🚀</div>
             <h3>Zero Input Lag</h3>
-            <p>Timer resolution 1ms, DPC latency réduite à zéro, et priorité périphériques maximale pour une réactivité instantanée en jeu.</p>
+            <p>1ms timer resolution, near-zero DPC latency, and maximum peripheral priority for instant responsiveness in any game.</p>
         </div>
     </section>
 
     <!-- Stats Section -->
     <section class="stats" id="stats">
-        <h2>Résultats Prouvés</h2>
+        <h2>Proven Results</h2>
         <div class="stats-grid">
             <div class="stat-item">
                 <div class="stat-number" data-target="85">0</div>
-                <div class="stat-label">% Latence Réduite</div>
+                <div class="stat-label">% Latency Reduced</div>
             </div>
             <div class="stat-item">
                 <div class="stat-number" data-target="50">0</div>
-                <div class="stat-label">% Input Lag Réduit</div>
+                <div class="stat-label">% Input Lag Reduced</div>
             </div>
             <div class="stat-item">
                 <div class="stat-number" data-target="10000">0</div>
-                <div class="stat-label">+ Utilisateurs Actifs</div>
+                <div class="stat-label">+ Active Users</div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p style="color: #999;">© 2024 Spirit Tweaks - Tous droits réservés</p>
-        <p style="font-size: 14px;">Optimisations système légitimes pour maximiser vos performances gaming</p>
+        <p style="color: #999;">© 2024 Spirit Tweaks - All Rights Reserved</p>
+        <p style="font-size: 14px;">Legitimate system optimizations designed to maximize gaming performance</p>
     </footer>
 
     <script>
