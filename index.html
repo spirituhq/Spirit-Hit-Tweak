@@ -270,12 +270,19 @@
             letter-spacing: 1px;
         }
 
+        .download-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
         .download-button {
             display: inline-flex;
             align-items: center;
             gap: 15px;
-            padding: 20px 50px;
-            font-size: 20px;
+            padding: 20px 40px;
+            font-size: 18px;
             font-weight: bold;
             color: #fff;
             background: linear-gradient(135deg, #8a2be2, #ff1493);
@@ -287,6 +294,10 @@
             box-shadow: 0 10px 40px rgba(138, 43, 226, 0.4);
             position: relative;
             overflow: hidden;
+        }
+
+        .download-button.secondary {
+            background: linear-gradient(135deg, #4b0082, #8a2be2);
         }
 
         .download-button::before {
@@ -457,6 +468,14 @@
             .features {
                 grid-template-columns: 1fr;
             }
+
+            .download-buttons {
+                flex-direction: column;
+            }
+
+            .download-button {
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -496,13 +515,20 @@
         <h2>Ready to Dominate?</h2>
         <p>Download Spirit Tweaks and transform your gaming experience</p>
 
-        <a href="https://www.dropbox.com/scl/fi/4c4heahtiw29kdxjruwk2/Spirit-Hit-Tweaks.exe?rlkey=jcyplizb87254rxf9dtzkphgr&st=6prhehxv&dl=1" class="download-button" download>
-            <span>📥</span>
-            <span>Download Now</span>
-        </a>
+        <div class="download-buttons">
+            <a href="https://www.dropbox.com/scl/fi/4c4heahtiw29kdxjruwk2/Spirit-Hit-Tweaks.exe?rlkey=jcyplizb87254rxf9dtzkphgr&st=6prhehxv&dl=1" class="download-button" download>
+                <span>💻</span>
+                <span>PC Version</span>
+            </a>
+
+            <a href="https://www.dropbox.com/scl/fi/oe1q7pygeyffbk05ruqi6/Spirit-Tweaks-ps4ps5.html?rlkey=wgszcanakk929ysqvhinzklxj&st=ccu8agai&dl=1" class="download-button secondary" download>
+                <span>🎮</span>
+                <span>PS4/PS5 Guide</span>
+            </a>
+        </div>
 
         <p style="margin-top: 30px; font-size: 14px; color: #666;">
-            ⚠️ Windows 10/11 - Run as Administrator
+            ⚠️ Windows 10/11 - Run as Administrator | PS4/PS5 - Complete Setup Guide
         </p>
     </section>
 
@@ -568,7 +594,7 @@
                                 stat.textContent = Math.ceil(current).toLocaleString();
                                 requestAnimationFrame(updateCounter);
                             } else {
-                                stat.textContent = target.toLocaleString() + (target === 10000 ? '+' : '%');
+                                stat.textContent = target.toLocaleString() + (target === 8 ? '+' : '%');
                             }
                         };
 
@@ -602,9 +628,3 @@
     </script>
 </body>
 </html>
-
-
-
-
-
-
