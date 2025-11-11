@@ -104,6 +104,11 @@
             50% { filter: drop-shadow(0 0 20px rgba(255, 20, 147, 0.8)); }
         }
 
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
         nav a {
             color: #fff;
             text-decoration: none;
@@ -131,6 +136,27 @@
 
         nav a:hover::before {
             width: 100%;
+        }
+
+        .support-button {
+            background: linear-gradient(135deg, #8a2be2, #ff1493);
+            padding: 10px 25px;
+            border-radius: 25px;
+            margin-left: 20px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 5px 20px rgba(138, 43, 226, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .support-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(138, 43, 226, 0.6);
+        }
+
+        .support-button::before {
+            display: none;
         }
 
         /* Hero Section */
@@ -454,11 +480,17 @@
 
             nav {
                 margin-top: 20px;
+                flex-wrap: wrap;
+                justify-content: center;
             }
 
             nav a {
-                margin: 0 15px;
+                margin: 5px 15px;
                 font-size: 14px;
+            }
+
+            .support-button {
+                margin: 10px 0 0 0;
             }
 
             .screenshot-wrapper {
@@ -492,6 +524,7 @@
             <a href="#features">Features</a>
             <a href="#stats">Stats</a>
             <a href="#download">Download</a>
+            <a href="https://www.paypal.me/SpiritDev" target="_blank" class="support-button">💜 Support Me</a>
         </nav>
     </header>
 
@@ -564,7 +597,7 @@
                 <div class="stat-label">% Input Lag Reduced</div>
             </div>
             <div class="stat-item">
-                <div class="stat-number" data-target="8">0</div>
+                <div class="stat-number" data-target="25">0</div>
                 <div class="stat-label">+ Active Users</div>
             </div>
         </div>
